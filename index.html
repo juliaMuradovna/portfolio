@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Creating a Modern Portfolio Landing Page with Bootstrap and JavaScript</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+    <link rel="icon" type="image/x-icon" href="/img/favicon.png">
+    <link rel="stylesheet" href="styles.css" />
+
+</head>
+<body>
+<!-- START PRELOADER -->
+<div id="preloader">
+    <div id="status"> </div>
+</div>
+<!-- END PRELOADER -->
+<!-- Return to Top -->
+<a href="javascript:" id="return-to-top"><span class="fa fa-arrow-up" aria-hidden="true"></span></a>
+<!-- navigation -->
+<!-- start Fixed navbar -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#ResponsiveNav">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-right" id="ResponsiveNav">
+            <ul class="nav navbar-nav">
+                <li><a href="#about-me" class="page-scroll">ABOUT</a></li>
+                <li><a href="#portfolio" class="page-scroll">PORTFOLIO</a></li>
+                <li><a href="#services" class="page-scroll">SERVICES</a></li>
+                <li><a href="#contact" class="page-scroll">CONTACT</a></li>
+            </ul>
+        </div>
+        <!-- end collapse -->
+    </div>
+    <!-- end container fluid -->
+</nav>
+<!-- end navigation -->
+<!-- intro header -->
+<header class="intro">
+    <div class="intro-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <!-- start typer hello  -->
+                    <div class="brand-heading">
+                        <span class="txt-rotate" data-period="100"
+                              data-rotate='[ "Hello,", "Привет,", "Olá,", "Hallo,", "Salut,", "Ciao,", "Hola,", "Hej," ]'></span>
+                    </div>
+                    <!-- end typer hello -->
+                    <p class="intro-text">My name is Julia Muradovna.
+                        <br> I'm a <span class="fa fa-code" aria-hidden="true"></span> <span class="intro-text-hgl">front-end developer</span>
+                        <span class="fa fa-code" aria-hidden="true"></span>
+                        <br>based in the beautiful city of <span class="city">Gyumri</span>, Armenia.</p>
+                    <!-- start mouse wrap -->
+                    <div class="mouse-warp">
+                        <a href="#mouse-here" class="page-scroll">
+                            <div class="mouse">
+                                <div class="scroll"></div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- end mouse wrap -->
+                </div>
+                <!-- end column wrapping -->
+            </div>
+            <!-- end row header -->
+        </div>
+        <!-- end container header -->
+    </div>
+    <!-- end intro body -->
+</header>
+<!-- end intro header -->
+<div id="mouse-here"></div>
+<!-- only for mouse to fall before the start of the section -->
+<!-- start about me -->
+<section id="about-me">
+    <div class="container">
+        <div class="row">
+            <h2>About</h2>
+            <div class="col-lg-6 about-intro">
+                <div class="about-inner">
+                    <div class="about-ct">
+                        <img src="https://static.vecteezy.com/system/resources/previews/024/098/521/non_2x/female-developer-with-desktop-free-png.png"
+                             alt="Julia Muradovna" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 about-intro-text" style="padding-top: 74px">
+                <h3>Full-Stack JavaScript Developer | 6+ Years of Experience | MERN, REST APIs, & Cloud Solutions</h3>
+
+                <p>I am a highly skilled full-stack JavaScript developer with over
+                    6 years of experience in building and deploying scalable web
+                    applications and APIs. My expertise spans both front-end and back-end development,
+                    allowing me to create seamless, full-cycle solutions tailored to meet your business needs.</p>
+
+                <h4>Key Skills & Technologies:</h4>
+                <ul>
+                    <li style="padding-top: 20px">
+                        <b>Front-End:</b>
+                        React.js, Next.js, HTML5, CSS3, Sass, Tailwind CSS
+                    </li>
+                    <li style="padding-top: 20px">
+                        <b>Back-End:</b>
+                        Node.js, Express.js, RESTful APIs, WebSockets
+                    </li>
+                    <li style="padding-top: 20px">
+                        <b>Databases:</b>
+                        MongoDB, PostgreSQL, MySQL, Firebase
+                    </li>
+                    <li style="padding-top: 20px">
+                        <b>Version Control & CI/CD:</b>
+                        Git, GitHub, Bitbucket, Jenkins, Docker
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- end row about -->
+    </div>
+    <!-- end container about -->
+    <!-- start count stats -->
+    <section id="counter-stats">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 stats">
+                    <span class="fa fa-code" aria-hidden="true"></span>
+                    <div class="counter" data-count="700000">0</div>
+                    <h5>Lines of code</h5>
+                </div>
+                <div class="col-lg-3 stats">
+                    <span class="fa fa-check" aria-hidden="true"></span>
+                    <div class="counter" data-count="80">0</div>
+                    <h5>Projects done</h5>
+                </div>
+                <div class="col-lg-3 stats">
+                    <span class="fa fa-user" aria-hidden="true"></span>
+                    <div class="counter" data-count="30">0</div>
+                    <h5>Happy clients</h5>
+                </div>
+                <div class="col-lg-3 stats">
+                    <span class="fa fa-coffee" aria-hidden="true"></span>
+                    <div class="counter" data-count="999">0</div>
+                    <h5>Cups of coffee</h5>
+                </div>
+            </div>
+            <!-- end row counter stats -->
+        </div>
+        <!-- end container counter stats -->
+    </section>
+    <!-- end cont stats -->
+</section>
+<!-- end about me -->
+
+<!-- start work portfolio -->
+<section id="portfolio">
+    <div class="container-fluid portfolio-ct">
+        <h2>PORTFOLIO</h2>
+        <div class="row">
+            <!-- start first portfolio item -->
+            <div class="col-sm-6 col-md-4 grid-portfolio">
+                <div class="portfolio-item-ct">
+                    <div class="thumbnail">
+                        <img src="http://marinamarques.pt/img/work-ibvmx.png" alt="Portfolio - IBV MEXICO"
+                             class="img-responsive">
+                        <div class="textbox-portfolio">
+                            <div class="button-weblink">
+                                <a href="https://ibv-mx.bnpparibas.com/" alt="Portfolio - IBV MEXICO"
+                                   target="_blank"><span class="fa fa-link portfolio-link"
+                                                         aria-hidden="true"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="caption portfolio-details">
+                        <h3>IBV MEXICO</h3>
+                        <p>Responsive website done for BNP Paribas CIB using Wordpress.
+                            <br> Child theme developed based on a free theme.
+                        </p>
+                        <ul class="portfolio-tags">
+                            <li class="portfolio-tag">WORDPRESS</li>
+                            <li class="portfolio-tag">CHILD THEME</li>
+                            <li class="portfolio-tag">SEO</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- end first portfolio item -->
+            <!-- start second portfolio item -->
+            <div class="col-sm-6 col-md-4 grid-portfolio">
+                <div class="portfolio-item-ct">
+                    <div class="thumbnail">
+                        <img src="http://marinamarques.pt/img/work-areyoufeelinglow.png"
+                             alt="Portfolio - ARE YOU FEELING LOW?" class="img-responsive">
+                        <div class="textbox-portfolio">
+                            <div class="button-weblink">
+                                <a href="https://shvvffle.github.io/areyoufeelinglow/" target="_blank"
+                                   alt="Portfolio - ARE YOU FEELING LOW?"><span class="fa fa-link portfolio-link"
+                                                                                aria-hidden="true"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="caption portfolio-details">
+                        <h3>ARE YOU FEELING LOW?</h3>
+                        <p>Landing page with a compliment generator
+                            <br> using Javascript.
+                        </p>
+                        <ul class="portfolio-tags">
+                            <li class="portfolio-tag">HTML5 / CSS3</li>
+                            <li class="portfolio-tag">BOOTSTRAP</li>
+                            <li class="portfolio-tag">JAVASCRIPT</li>
+                            <li class="portfolio-tag">SEO</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- end second portfolio item -->
+            <!-- start third portfolio item -->
+            <div class="col-sm-6 col-md-4 grid-portfolio">
+                <div class="portfolio-item-ct">
+                    <div class="thumbnail">
+                        <img src="http://marinamarques.pt/img/work-personalWebsite.png"
+                             alt="Portfolio - PERSONAL WEBSITE" class="img-responsive">
+                        <div class="textbox-portfolio">
+                            <div class="button-weblink">
+                                <a href="#" alt="Portfolio - PERSONAL WEBSITE"><span class="fa fa-link portfolio-link"
+                                                                                     aria-hidden="true"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="caption portfolio-details">
+                        <h3>PERSONAL WEBSITE</h3>
+                        <p>Responsive website
+                            <br> using Bootstrap.
+                        </p>
+                        <ul class="portfolio-tags">
+                            <li class="portfolio-tag">HTML5 / CSS3</li>
+                            <li class="portfolio-tag">BOOTSTRAP</li>
+                            <li class="portfolio-tag">JAVASCRIPT</li>
+                            <li class="portfolio-tag">SEO</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- end third portfolio item -->
+        </div>
+        <!-- end row portfolio -->
+    </div>
+    <!-- end container portfolio -->
+</section>
+<!-- end work portfolio -->
+<!-- start services -->
+<section id="services">
+    <div class="container">
+        <h2>SERVICES</h2>
+        <div class="row">
+            <div class="ct-services">
+                <div class="col-md-4 services-item">
+                    <div class="rotate">
+                        <span class="fa fa-code" aria-hidden="true"></span>
+                        <!-- <i class="fa fa-file-code-o fa-wrapper" aria-hidden="true"></i> -->
+                    </div>
+                    <h3>Full Stack Development</h3>
+                    <p>Development of responsive websites, cross-browser and cross-platform testing.</p>
+                </div>
+                <div class="col-md-4 services-item">
+                    <div class="rotate">
+                        <span class="fa fa-wordpress fa-wrapper" aria-hidden="true"></span>
+                    </div>
+                    <h3>Wordpress Development</h3>
+                    <p>Custom development (website, theme & plugin), hosting and maintenance.</p>
+                </div>
+                <div class="col-md-4 services-item">
+                    <div class="rotate">
+                        <span class="fa fa-line-chart" aria-hidden="true"></span>
+                        <!-- <i class="fa fa-search fa-wrapper" aria-hidden="true"></i>-->
+                    </div>
+                    <h3>Search Engine Optimization</h3>
+                    <p>Increase your visibility across all major search engines & local search with SEO techniques.</p>
+                </div>
+            </div>
+            <!-- end row of services -->
+        </div>
+        <!-- end row services section -->
+    </div>
+    <!-- end div services section -->
+</section>
+<!-- end services -->
+<!-- start footer -->
+<footer id="contact">
+    <div class="container">
+        <div class="row">
+            <h2>CONTACT</h2>
+            <p>You can contact me at: juliamuradovna@gmail.com</p>
+            <br>
+                <p id="copyright"></p>
+        </div>
+        <!-- end row contact -->
+    </div>
+    <!-- end container footer section -->
+</footer>
+<!-- end footer -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src='https://shvvffle.github.io/js/jquery.easing.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+<script src="script.js"></script>
+</body>
+</html>
